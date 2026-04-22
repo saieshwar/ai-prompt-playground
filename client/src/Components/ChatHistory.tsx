@@ -10,7 +10,8 @@ import {
 } from "@mui/material";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import type { ChatHistoryItem } from "../types/chat";
-
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { CHAT_HISTORY_KEY } from "../constants";
 
 interface ChatHistoryProps {
@@ -103,7 +104,10 @@ function ChatHistory({ history, setHistory }: ChatHistoryProps) {
                     lineHeight: 1.7,
                   }}
                 >
-                  {item.response}
+                  {/* {item.response} */}
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {item.response}
+                  </ReactMarkdown>
                 </Typography>
               </Box>
 
