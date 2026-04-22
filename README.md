@@ -117,8 +117,6 @@ If you do not provide an API key or if quota is exceeded:
 ## 📌 Future Improvements
 
 * Dark mode toggle
-* Prompt history (local storage)
-* Streaming responses
 * Model selection dropdown
 * Syntax highlighting for code blocks
 
@@ -126,7 +124,7 @@ If you do not provide an API key or if quota is exceeded:
 
 ## 🎥 Demo
 
-(Attach your demo video link here)
+
 
 ---
 
